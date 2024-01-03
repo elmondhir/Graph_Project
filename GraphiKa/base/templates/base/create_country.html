@@ -1,0 +1,7 @@
+<h1>Create Country</h1>
+<form method="post" action="{% url 'create_country' %}">
+    {% csrf_token %}
+    <label for="code">Country Code:</label>
+    <input type="text" name="code" required>
+    <button type="submit">Create Country</button>
+</form>
