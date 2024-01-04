@@ -23,7 +23,8 @@ def room(request, pk):
 def create_country(request):
     if request.method == 'POST':
         code = request.POST.get('code')
-        new_country = Country(code=code)
+        name = request.POST.get('label')
+        new_country = Country(code=code, name=name)
         new_country.save()
         return redirect('country_list')
 
