@@ -5,7 +5,7 @@ Have you ever wanted to work with Neo4j and Graph data, but you just couldnt get
 GaphiKa should help you with that.
 
 ### Updates:
-1. The LLM model to translate NL-Cypher, is hosted on the HuggingFace Api, however there are no deployable endpoints, so the model needs to be downloaded locally (around 10gb).
+1. The LLM model to translate NL-Cypher, is hosted on the HuggingFace Api, however there are no deployable endpoints, so the model needs to be downloaded locally (download zie depends on the model's number of params).
 3. Multiple models are availible with different sizes, run the appropiate one based on you hardware (larger models, require more memory )
 
 #### Coming Soon.
