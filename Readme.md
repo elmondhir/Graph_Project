@@ -6,6 +6,6 @@ GaphiKa should help you with that.
 
 ### Updates:
 1. The LLM model to translate NL-Cypher, is hosted on the HuggingFace Api, however there are no deployable endpoints, so the model needs to be downloaded locally (around 10gb).
-2. The dataset size (Which the LLM was trained on) currently has a small size and is maintained by me only, so the model's output are not always correct.
+3. Multiple models are availible with different sizes, run the appropiate one based on you hardware (larger models, require more memory )
 
 #### Coming Soon.
