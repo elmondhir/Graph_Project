@@ -1,4 +1,5 @@
-body {
+/* styles.css */
+/* body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -12,8 +13,19 @@ header {
     padding: 10px;
 }
 
-form {
-    margin: 20px;
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.model-selection,
+.text-input,
+.result {
+    margin-bottom: 20px;
 }
 
 label {
@@ -24,13 +36,12 @@ label {
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 16px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="submit"] {
+button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
@@ -39,17 +50,10 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #45a049;
 }
 
-h3 {
+h2 {
     color: #333;
-}
-
-textarea[readonly] {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-}
+} */
