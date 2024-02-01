@@ -2,16 +2,53 @@
 
 {% block content%}
 
-<h1> Home template</h1>
+<header class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                {% load static %}
+                <img src="{% static 'img/graphika-modified.png' %}" alt="Logo" class="img-fluid">
+            </div>
+            <div class="col-md-10">
+                <h1 class="display-5">Welcome to the NL-to-Cypher generator</h1>
+            </div>
+        </div>
+    </div>
+</header>
 
-<div>
-    <div>
-        {% for room in rooms %}
-        <h5> {{room.id}} --- <a href='/room/{{room.id}}'>{{room.name}}</a></h5>
+<main class="container mt-4">
+<form method="post" action="{% url 'home' %}"> <!-- transformers is the view name-->
+    {% csrf_token %}
 
-        {% endfor %}
+    <div class="form-group">
+        <label for="model">Select Model:</label>
+        <select id="model" name="model" class="form-control">
+            <option value="Deepseek-coder-3b">Deepseek coder 3b</option>
+            <option value="CodeLlama-7b">CodeLlama 7b</option>
+        </select>
     </div>
 
-</div>
+    <div class="form-group">
+        <label for="huggingFaceToken">Hugging Face Token:</label>
+        <textarea id="huggingFaceToken" name="hugging_face_token" class="form-control" rows="2" placeholder="Enter your Hugging Face token..."></textarea>
+    </div>
 
+    <div class="form-group">
+        <label for="inputText">Enter Text:</label>
+        <textarea id="long_text" name="long_text" class="form-control" rows="6" placeholder="Type your text here..."></textarea>
+    </div>
+
+    <br>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>
+
+{% if translation %}
+<div class="mt-4">
+    <!-- <h3>Summary:</h3> -->
+    <h2 class="text-primary">Processed Text:</h2>
+    <textarea class="form-control" rows="4" cols="50" readonly>{{ translation }}</textarea>
+</div>
+{% endif %}
+
+</main>
 {% endblock content%}
