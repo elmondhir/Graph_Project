@@ -1,6 +1,2 @@
-\venv
-\venv1
 cypher_dataset.csv
-gpt_train_data.csv
-test.py
 requirements.txt

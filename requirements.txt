@@ -1,16 +1,2 @@
-# django==5.0
-# neomodel==5.2.1
-
-# !pip install -Uqqq pip
-# bitsandbytes
-
-bitsandbytes==0.41.3
-# pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
-torch==2.0.1
-# torch
-git+https://github.com/huggingface/transformers.git@e03a9cc
-git+https://github.com/huggingface/peft.git@42a184f
-git+https://github.com/huggingface/accelerate.git@c9fbb71
-datasets==2.12.0
-loralib==0.1.1
-einops==0.6.1
+django==5.0.1
+neomodel==4.0.8
