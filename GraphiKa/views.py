@@ -13,4 +13,4 @@ def home(request):
         MY_API_KEY = request.POST.get('hugging_face_token', '')
         translation = translator.generate(input_text, model_name, MY_API_KEY, False)  # Your summarization code here
     
-    return render(request, "base/home.html", context={'translation': translation})
+    return render(request, "home.html", context={'translation': translation})
