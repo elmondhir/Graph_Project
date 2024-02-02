@@ -16,7 +16,7 @@ Follow these steps to get started with Graphika:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/elmondhir/Graphika.git
+    git clone https://github.com/elmondhir/Graphika-v1.0.git
     cd Graphika
     ```
 
