@@ -46,7 +46,12 @@ Follow these steps:
     docker-compose build
     ```
 
+2. Start the application:
+    ```bash
+    docker-compose up
+    ```
 
+3. Open your browser and go to [http://localhost:8000](http://localhost:8000) to access the Graphika interface.
 
 ## Usage
 
