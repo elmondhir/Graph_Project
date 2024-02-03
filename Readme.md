@@ -35,6 +35,19 @@ Follow these steps to get started with Graphika:
 
 4. Open your browser and go to [http://localhost:8000](http://localhost:8000) to access the Graphika interface.
 
+## OR Running with Docker
+
+To run Graphika using Docker, make sure Docker is installed on your machine. If not, you can download and install Docker from the [official Docker website](https://www.docker.com/get-started).
+
+Follow these steps:
+
+1. Build the Docker image:
+    ```bash
+    docker-compose build
+    ```
+
+
+
 ## Usage
 
 1. Choose an LLM model from the available options.
