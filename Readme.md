@@ -67,15 +67,9 @@ Follow these steps:
 
 ## Screenshots
 
+### Chose the model, enter the HF API and press submit
+![Alt text](screenshot.png?raw=true "Title")
 
 ## Contributing
 
-We welcome contributions! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. Follow our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Graphika is designed to make learning Neo4j's Cypher language more accessible, and we hope it enhances your experience in querying graphs. If you have any questions or need assistance, don't hesitate to open an issue or reach out to us. Happy querying!
+We welcome contributions! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
